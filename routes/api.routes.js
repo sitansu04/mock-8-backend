@@ -4,9 +4,7 @@ const jwt = require("jsonwebtoken");
 const { Usermodel } = require("../models/user.model");
 const { Resturantsmodel } = require("../models/resturants.model");
 const { Ordermodel } = require("../models/orders.model");
-const {
-  authentication,
-} = require("../../Mock_7/backend/middlewares/authentication.middleware");
+const { authentication } = require("../middlewares/authentication.middleware");
 const apiRouter = express.Router();
 // ------------------------------------CHECKING API ROUTER------------------------>
 apiRouter.get("/", async (req, res) => {
